@@ -10,4 +10,10 @@ notes.get('/', (req, res) => {
 
 // POST Route for 
 
+notes.post('/', (req, res) => {
+
+});
+
+
+
 module.exports = notes; 
