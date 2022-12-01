@@ -1,9 +1,8 @@
 const express = require('express');
 const path = require('path');
-const note = require('./routes/notes');
 const noteData = require('./db/db.json');
-const fs = require('fs');
-const uuid = require('./helpers/uuid');
+const api = require('./routes/index.js')
+
 
 const PORT = process.env.PORT || 3001;
 
@@ -28,7 +27,7 @@ app.get('/', (req, res) =>
 app.get('/api/notes', (req, res) => {
   res.json(noteData);
 });
-
+ 
 // POST api route 
 app.post('/api/notes', (req, res) => { 
   
