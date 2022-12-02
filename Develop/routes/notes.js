@@ -11,12 +11,12 @@ notes.get('/', (req, res) => {
 // POST Route for new note 
 notes.post('/', (req, res) => {
   console.info(req.body);
-  const { noteTitle, noteText } = req.body;
+  const { title, text } = req.body;
 
   if(req.body) {
   const newNote = {
-    noteTitle,
-    noteText, 
+    title,
+    text, 
     id: uuid(),
   };
   readAndAppend(newNote, 'db/db.json');
