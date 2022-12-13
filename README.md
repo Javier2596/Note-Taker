@@ -16,9 +16,9 @@ To use this application, first the user will need to perform an "npm i" installa
 
 https://expressjs.com/en/5x/api.html#app
 
-## Recording 
+## Heroku link
 
-https://app.castify.com/watch/5ffe2770-c8c6-4593-9dd2-8efc9b38904b
+https://note-taker0424.herokuapp.com/
 
 ## License
 
